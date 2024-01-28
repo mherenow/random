@@ -39,7 +39,6 @@ class GridApp:
         new_white_cells = set()
         all_white_cells = self.white_cells.copy()
 
-        # Add newly added white cells from the click event
         for row in range(self.rows):
             for col in range(self.columns):
                 if self.grid_data[row, col] == 1 and (row, col) not in all_white_cells:
